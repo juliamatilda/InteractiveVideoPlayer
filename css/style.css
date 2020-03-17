@@ -1,0 +1,60 @@
+*, *:before, *:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+ font-family: 'Nunito', sans-serif;
+ font-size: 20px;
+ line-height: 1.5;
+}
+
+video {
+  margin: 0 auto;
+  display: block;
+  width: 100%;
+}
+
+.container {
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+.mobile-highlight {
+  color: #ffad33;
+}
+
+.text {
+  width: 85%;
+  margin: 0 auto;
+  padding-top: 20px;
+}
+
+
+/*Media queries*/
+
+@media (min-width: 769px) {
+
+  body {
+   font-size: 17px;
+   line-height: 1.9;
+  }
+
+	video {
+		 width: 70%;
+     max-width: 1000px;
+  }
+
+  .text {
+    width: 70%;
+  }
+
+  .mobile-highlight {
+    color: black;
+  }
+
+  .desktop-highlight {
+    color: #ffad33;
+  }
+}

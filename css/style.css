@@ -10,25 +10,25 @@ body {
  line-height: 1.5;
 }
 
-video {
-  margin: 0 auto;
-  display: block;
-  width: 100%;
-}
-
 .container {
   margin-top: 40px;
-  margin-bottom: 40px;
+  margin-bottom: 40px
+  width:100%;
 }
 
-.mobile-highlight {
-  color: #ffad33;
+.video-content {
+  width:100%;
+  margin: 0 auto;
 }
 
 .text {
   width: 85%;
   margin: 0 auto;
   padding-top: 20px;
+}
+
+.highlight {
+  color: #ffad33;
 }
 
 
@@ -41,20 +41,19 @@ video {
    line-height: 1.9;
   }
 
-	video {
-		 width: 70%;
-     max-width: 1000px;
+  .container {
+    width: 60%;
+    margin: 0 auto;
+  }
+
+	.video-content {
+		width: 100%;
+    margin-top: 40px;
   }
 
   .text {
-    width: 70%;
+    width: 100%;
   }
 
-  .mobile-highlight {
-    color: black;
-  }
 
-  .desktop-highlight {
-    color: #ffad33;
-  }
 }

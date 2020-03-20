@@ -6,25 +6,28 @@
     <title></title>
 
     <link rel="stylesheet" href="css/normalize.css">
-    <link href="https://fonts.googleapis.com/css?family=Nunito&display=swap" rel="stylesheet">
-    <link href="css/mediaelementplayer.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nunito&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/mediaelement/4.2.14/mediaelementplayer.min.css">
     <link href="css/style.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   </head>
   <body>
     <div class="container">
 
-       <video controls>
+     <div class="video-content">
+      <video width="640" height="360" style="width:100%; height:100%;" controls>
           <source src="assets/video.mp4" type="video/mp4">
           <source src="assets/video.ogg" type="video/ogg">
-          <track label="English" kind="subtitles" srclang="en" src="captions.vtt" default>
-        </video>
+      </video>
+     </div>
+
 
      <div class="text">
         <p>Now that we've looked at the architecture of the internet, let's see how you might connect your personal devices to the internet inside your house.
-          <span class="mobile-highlight">Well there are many ways to connect to the internet, and</span> most often people connect wirelessly.
+          Well there are many ways to connect to the internet, and most often people connect wirelessly.
         </p>
 
-        <p><span class="desktop-highlight">Let's look at an example of how you can connect to the internet.</span> If you live in a city or a town, you probably have a coaxial cable for cable Internet, or a phone line if you have DSL, running to the outside of your house, that connects you to the Internet Service Provider, or ISP.
+        <p>Let's look at an example of how you can connect to the internet. If you live in a city or a town, you probably have a coaxial cable for cable Internet, or a phone line if you have DSL, running to the outside of your house, that connects you to the Internet Service Provider, or ISP.
           If you live far out in the country, you'll more likely have a dish outside your house, connecting you wirelessly to your closest ISP, or you might also use the telephone system.
         </p>
 
@@ -33,10 +36,16 @@
         </p>
      </div>
     </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mediaelement/4.2.14/mediaelement-and-player.min.js"></script>
     <script>
-    //  $('video').mediaelementplayer({
+     $(document).ready(function() {
 
-    //  });
-    </script>
+      $('video').mediaelementplayer({
+        features: ['playpause', 'current','progress', 'duration', 'volume', 'fullscreen']
+      });
+
+    });
+  </script>
+
   </body>
 </html>

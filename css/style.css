@@ -11,20 +11,18 @@ body {
 }
 
 .container {
-  margin-top: 40px;
-  margin-bottom: 40px
   width:100%;
 }
 
 .video-content {
   width:100%;
   margin: 0 auto;
+  margin-top: 10px;
 }
 
 .transcript {
   width: 85%;
-  margin: 0 auto;
-  padding-top: 20px;
+  margin: 40px auto;
 }
 
 .highlight {
@@ -32,6 +30,10 @@ body {
 }
 
 
+.mejs__controls:not([style*="display: none"]){
+  background: linear-gradient(rgba(131, 169, 135, 0.5), rgba(85, 81, 117, 0.6));
+
+}
 
 /*Media queries*/
 
